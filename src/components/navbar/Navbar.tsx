@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export const Navbar: React.FC = () => {
-  const [activeItem, setActiveItem] = useState('Home');
-  const navItems = ['Home', 'Projects', 'Career', 'Education', 'Contact'];
+  const [activeItem, setActiveItem] = useState('HOME');
+  const navItems = ['HOME', 'EXPERIENCE', 'PROJECTS', 'SKILLS', 'CONTACT'];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/80 backdrop-blur-sm border-b border-stone-200/40 py-4 px-8">
