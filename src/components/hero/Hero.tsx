@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-screen overflow-hidden">
-            <motion.div 
+        <section id="home" className="relative min-h-screen overflow-hidden">
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.4 }}
                 transition={{ duration: 1 }}
@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
             />
 
             <div className='mt-[58vh] px-6 md:px-0 md:mt-50 md:ml-180 relative z-10'>
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 0.4 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -20,8 +20,8 @@ export const Hero: React.FC = () => {
                 >
                     "Progress is built one commit at a time"
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
                     Full Stack Developer
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 0.8 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
                 </motion.div>
             </div>
 
-            <motion.div 
+            <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}

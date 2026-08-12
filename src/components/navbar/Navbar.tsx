@@ -27,7 +27,11 @@ export const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/95 backdrop-blur-sm border-b border-stone-200/40 py-4 px-6 md:px-8">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="#home" className="text-xl md:text-2xl font-semibold text-[#5c4738] font-serif tracking-wide hover:opacity-85 transition-opacity">
+        <a 
+          href="#home" 
+          onClick={(e) => handleNavClick(e, 'HOME')}
+          className="text-xl md:text-2xl font-semibold text-[#5c4738] font-serif tracking-wide hover:opacity-85 transition-opacity"
+        >
           SAI GANESH THENEPALLI
         </a>
 
