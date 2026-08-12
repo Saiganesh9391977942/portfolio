@@ -1,77 +1,64 @@
-# React + TypeScript + Vite
+# Sai Ganesh's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, highly interactive developer portfolio web application built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Framer Motion** for animations, using **Lenis** for smooth scroll effects.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo & Contact
+- **Developer**: Sai Ganesh Thenepalli
+- **LinkedIn**: [sai-ganesh-thenepalli](https://www.linkedin.com/in/sai-ganesh-thenepalli/)
+- **Contact Channel**: Integrated WhatsApp Form redirects to `+919391977942`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Dynamic Hero Section**: Staggered fade and slide-in entry animation detailing key roles with smooth anchor links to view work.
+- **About Me**: Brief summary of academic qualifications, core tech stack, and developer journey.
+- **Experience Timeline**: Detailed description of Software Developer Intern experience at *DigiUniv Technologies Private Limited*, showcasing work on *EnterpriseKart* and *Hargharwala*.
+- **Selected Works (Projects)**: Detailed feature highlights card showcasing **CuraLink** (AI-powered healthcare API integration platform built with React, Node.js, FastAPI, and MongoDB).
+- **Tools of Execution (Skills)**: Staggered grid cards layout classifying Frontend, Backend, Databases, Tools & Development, and Programming Concepts.
+- **Academic Journey (Education)**: Custom responsive vertical timeline showing:
+  - **B.Tech (CSE)** — RGUKT (IIIT) Srikakulam (CGPA: 7.6/10) with custom Graduation Cap marker.
+  - **Pre-University MPC** — RGUKT Srikakulam (GPA: 8.4/10)
+  - **SSC** — ZP High School, Nampalli (GPA: 9.8/10)
+- **Get in Touch (Contact Form)**: Client-side validated form that formats input fields and automatically redirects submission payloads directly to WhatsApp.
+- **Navbar Offset Smooth Scroll**: Intercepts standard anchor clicks, calculating coordinates with an **80px offset** to avoid fixed header overlays during page scroll.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Core Framework**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion (for load/scroll animations)
+- **Smooth Scroll**: Lenis Smooth Scroll
+- **Icons**: Lucide React, React Icons (FontAwesome)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 💻 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-```
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Saiganesh9391977942/portfolio.git
+   cd portfolio
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+4. Build for production:
+   ```bash
+   npm run build
+   ```
