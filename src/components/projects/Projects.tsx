@@ -14,7 +14,7 @@ const PROJECTS_DATA: Project[] = [
     {
         title: 'CuraLink',
         description: 'Curalink is an AI-powered healthcare information platform that helps users discover medical research, academic publications, and clinical trials through a single interface. I worked with React, Node.js, Express, FastAPI, MongoDB, LLM integration, and healthcare research APIs such as PubMed, OpenAlex, and ClinicalTrials.gov.',
-        image: 'public/curalink.png',
+        image: '/curalink.png',
         tags: ['Reactjs', 'Nodejs', 'MongoDB', 'FastAPI'],
         link: 'https://github.com/Saiganesh9391977942/curalink',
     }
