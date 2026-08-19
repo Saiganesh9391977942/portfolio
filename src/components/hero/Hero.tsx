@@ -9,11 +9,11 @@ export const Hero: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 0.4 }}
                 transition={{ duration: 1 }}
-                className="absolute inset-0 mt-20 bg-[url(../public/sai.png)] xl:bg-[url(../public/g.png)] bg-cover bg-center xl:bg-left-top pointer-events-none z-0"
+                className="absolute inset-0 mt-17 bg-[url(../public/sai.png)] xl:bg-[url(../public/g.png)] bg-cover bg-center xl:bg-left-top pointer-events-none z-0"
             />
 
             {/* Content Container */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 xl:px-16 flex flex-col justify-center min-h-screen pt-20 pb-16 xl:py-0">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 xl:px-16 flex flex-col justify-center min-h-screen pt-16 pb-16 xl:py-0">
                 <div className="grid grid-cols-1 xl:grid-cols-12 w-full gap-8">
                     {/* Left spacer column for desktop layout so background shows */}
                     <div className="hidden xl:block xl:col-span-6" />
