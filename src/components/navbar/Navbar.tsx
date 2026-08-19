@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <a href="./public/SaiGanesh.docx" download className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-xs font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm">
+          <a href="/Sai_Ganesh.docx" download className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-xs font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm">
             My Resume
           </a>
 
@@ -65,6 +65,7 @@ export const Navbar: React.FC = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-[#5c4738] hover:text-[#3d2e24] cursor-pointer"
             aria-label="Toggle Menu"
+            id="mobile-menu-toggle"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -90,7 +91,7 @@ export const Navbar: React.FC = () => {
               );
             })}
           </nav>
-          <a href="SaiGanesh.docx" download className="inline-flex sm:hidden items-center justify-center gap-2 px-5 py-3 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-sm font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm w-full text-center">
+          <a href="/Sai_Ganesh.docx" download className="inline-flex sm:hidden items-center justify-center gap-2 px-5 py-3 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-sm font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm w-full text-center">
             My Resume
           </a>
         </div>
