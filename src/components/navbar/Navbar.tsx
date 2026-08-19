@@ -27,8 +27,8 @@ export const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf9f6]/95 backdrop-blur-sm border-b border-stone-200/40 py-4 px-6 md:px-8">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           onClick={(e) => handleNavClick(e, 'HOME')}
           className="text-xl md:text-2xl font-semibold text-[#5c4738] font-serif tracking-wide hover:opacity-85 transition-opacity"
         >
@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
               );
             })}
           </nav>
-          <a href="./public/SaiGanesh.docx" download className="inline-flex sm:hidden items-center justify-center gap-2 px-5 py-3 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-sm font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm w-full text-center">
+          <a href="SaiGanesh.docx" download className="inline-flex sm:hidden items-center justify-center gap-2 px-5 py-3 rounded-md bg-[#5c4738] hover:bg-[#4a392d] text-white text-sm font-semibold tracking-wider uppercase transition-all duration-200 shadow-sm w-full text-center">
             My Resume
           </a>
         </div>
